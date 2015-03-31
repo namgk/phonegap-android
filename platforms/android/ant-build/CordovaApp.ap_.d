@@ -32,12 +32,16 @@ D:\phonegap\mygap\platforms\android\assets\www\icon.png \
 D:\phonegap\mygap\platforms\android\assets\www\img \
 D:\phonegap\mygap\platforms\android\assets\www\index.html \
 D:\phonegap\mygap\platforms\android\assets\www\js \
+D:\phonegap\mygap\platforms\android\assets\www\plugins \
 D:\phonegap\mygap\platforms\android\assets\www\res \
 D:\phonegap\mygap\platforms\android\assets\www\spec \
 D:\phonegap\mygap\platforms\android\assets\www\spec.html \
 D:\phonegap\mygap\platforms\android\assets\www\css\index.css \
 D:\phonegap\mygap\platforms\android\assets\www\img\logo.png \
 D:\phonegap\mygap\platforms\android\assets\www\js\index.js \
+D:\phonegap\mygap\platforms\android\assets\www\plugins\com.megster.cordova.ble \
+D:\phonegap\mygap\platforms\android\assets\www\plugins\com.megster.cordova.ble\www \
+D:\phonegap\mygap\platforms\android\assets\www\plugins\com.megster.cordova.ble\www\ble.js \
 D:\phonegap\mygap\platforms\android\assets\www\res\icon \
 D:\phonegap\mygap\platforms\android\assets\www\res\screen \
 D:\phonegap\mygap\platforms\android\assets\www\res\icon\android \

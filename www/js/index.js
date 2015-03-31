@@ -33,6 +33,12 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        document.addEventListener("pause", onPause, false);
+        document.addEventListener("resume", onResume, false);
+        document.addEventListener("unload", onUnload, false);
+        ble.scan([], 5, function(device) {
+            console.log(JSON.stringify(device));
+        }, failure);
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -47,3 +53,16 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+var failure = function(cause){
+    console.log(cause);
+}
+var onPause = function(){
+    console.log("----------------------I've been paused");
+}
+var onResume = function(){
+    console.log("----------------------I've been resumed");
+}
+var onUnload = function(){
+    console.log("----------------------I've been unloaded");
+}
