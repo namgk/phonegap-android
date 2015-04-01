@@ -36,7 +36,18 @@
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
+            <div id="content">
+                <div id="control">
+                    <button onclick="scan()" id="scan" disabled="true">Scan</button>
+                    <button onclick="clear()">Clear Logs</button>
+                </div>
+                <div id="log">
+                    <textarea class="textarea" id="logarea"></textarea>
+                </div>
+                
+            </div>
         </div>
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

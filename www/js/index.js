@@ -36,9 +36,7 @@ var app = {
         document.addEventListener("pause", onPause, false);
         document.addEventListener("resume", onResume, false);
         document.addEventListener("unload", onUnload, false);
-        ble.scan([], 5, function(device) {
-            console.log(JSON.stringify(device));
-        }, failure);
+        $('#scan').attr('disabled','false');
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -65,4 +63,17 @@ var onResume = function(){
 }
 var onUnload = function(){
     console.log("----------------------I've been unloaded");
+}
+var scan = function(){
+    log('test');
+    ble.scan([], 5, function(device) {
+            log(JSON.stringify(device));
+    }, failure);
+}
+
+function log(msg){
+    var logArea = $("#logarea");
+    logArea.val(logArea.val() + msg + '\n');
+    
+    
 }
